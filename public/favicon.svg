@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+  <style>
+    .primary {
+      fill: #1e40af;
+    }
+    .secondary {
+      fill: #3b82f6;
+    }
+    @media (prefers-color-scheme: dark) {
+      .primary {
+        fill: #60a5fa;
+      }
+      .secondary {
+        fill: #3b82f6;
+      }
+    }
+  </style>
+  <rect width="32" height="32" rx="6" fill="white" />
+  <path
+    d="M8 8.5C8 7.11929 9.11929 6 10.5 6H21.5C22.8807 6 24 7.11929 24 8.5V12H8V8.5Z"
+    class="primary"
+  />
+  <path
+    d="M8 13H24V23.5C24 24.8807 22.8807 26 21.5 26H10.5C9.11929 26 8 24.8807 8 23.5V13Z"
+    class="secondary"
+  />
+  <rect x="12" y="9" width="8" height="1.5" rx="0.75" fill="white" />
+  <rect x="12" y="16" width="8" height="1.5" rx="0.75" fill="white" />
+  <rect x="12" y="19" width="8" height="1.5" rx="0.75" fill="white" />
+  <rect x="12" y="22" width="8" height="1.5" rx="0.75" fill="white" />
+</svg> 

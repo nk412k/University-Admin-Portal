@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180" fill="none">
+  <!-- Background -->
+  <rect width="180" height="180" rx="40" fill="white" />
+  
+  <!-- Graduation cap - centered and scaled -->
+  <path d="M90 30L30 60L90 90L150 60L90 30Z" fill="#4F46E5" />
+  <path d="M50 70V100C50 115 68 130 90 130C112 130 130 115 130 100V70" stroke="#4F46E5" stroke-width="8" stroke-linecap="round" />
+  
+  <!-- Book or document -->
+  <rect x="65" y="90" width="50" height="65" rx="4" fill="#F59E0B" />
+  <path d="M75 110H105M75 130H95" stroke="white" stroke-width="4" stroke-linecap="round" />
+  
+  <!-- Tassel -->
+  <path d="M140 60V90M140 90L150 100M140 90L130 100" stroke="#4F46E5" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+</svg> 
