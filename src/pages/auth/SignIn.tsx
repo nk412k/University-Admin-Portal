@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useForm } from "react-hook-form";
@@ -27,12 +26,9 @@ const SignIn: React.FC = () => {
     formState: { errors },
   } = useForm<SignInFormValues>();
 
-  // We don't want to redirect immediately on mount
-  // Only redirect if user becomes authenticated after the form submission
   useEffect(() => {
     const isLoggedOut = localStorage.getItem("isLoggedOut") === "true";
-    
-    // If we have user and session and we're not logged out, redirect
+
     if (user && session && !isLoggedOut && !isSubmitting) {
       navigate("/dashboard", { replace: true });
     }
@@ -40,7 +36,6 @@ const SignIn: React.FC = () => {
 
   const onSubmit = async (data: SignInFormValues) => {
     try {
-      // Clear the logged out flag when attempting to sign in
       localStorage.removeItem("isLoggedOut");
       setIsSubmitting(true);
 
@@ -49,8 +44,7 @@ const SignIn: React.FC = () => {
       if (result?.error === "email_not_confirmed") {
         setEmailVerificationNeeded(true);
         setVerificationEmail(data.email);
-      } 
-      // We don't need to navigate here - the useEffect will handle it
+      }
     } catch (error) {
       console.error("Error during sign in:", error);
     } finally {
